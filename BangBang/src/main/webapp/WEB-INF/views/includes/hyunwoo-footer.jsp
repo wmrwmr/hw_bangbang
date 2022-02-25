@@ -4,12 +4,7 @@
     </div>
     <!-- /#wrapper -->
     
-    
-    		    <!-- 본문가리지 않는 플로팅배너 모듈 -->
-				<a style="POSITION: fixed; RIGHT: 1%; BOTTOM: 2%;" href="http://pf.kakao.com/_Cxjpwb/chat" target="_blank">
-							<img src="../../../bangbang/resources/imageContainer/kakaoLogo.png" style="width: 60px; height: 60px;"> 
-				</a>
-				<!-- 모듈 끝 -->
+
 				
 				
 
