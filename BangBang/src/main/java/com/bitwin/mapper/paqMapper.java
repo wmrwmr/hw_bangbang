@@ -29,4 +29,6 @@ public interface paqMapper {
 	public int adminGetTotalCount(Criteria cri);
 
 	public String getEmail(int uidx);
+	
+	public String getPhoneNum(int uidx);
 }

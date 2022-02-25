@@ -94,6 +94,12 @@ public class paqServiceImpl implements paqService {
 	}
 	
 	
+	@Override
+	public String getPhoneNum(int uidx) {
+		
+		log.info("get phoneNumber");
+		return mapper.getPhoneNum(uidx);
+	}
 	
 	
 	

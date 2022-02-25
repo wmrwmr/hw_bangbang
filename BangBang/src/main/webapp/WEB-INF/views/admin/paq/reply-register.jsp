@@ -101,9 +101,36 @@
 						
 						
 						
-						<button type="submit" class="btn btn-info">알림 전송</button>
+						
+						
+						<button type="submit" class="btn btn-info">알림 메일 전송</button>
 						
 					</form>
+					
+					
+					<form action="/bangbang/admin/paq/smsSend" method="post">
+					
+						<div class="form-group">
+						<input type='hidden' class="form-control" name='pqidx'
+						value='<c:out value="${paq.pqidx}"/>' readonly='readonly'>
+						</div>
+					
+					
+					
+						<div class="form-group">
+						<input type='hidden' class="form-control" name='uidx'
+						value='<c:out value="${paq.uidx}"/>' readonly='readonly'>
+						</div>
+						
+						
+						
+						
+						
+						<button type="submit" class="btn btn-info">알림 문자 전송</button>
+						
+					</form>
+					
+					
 					
 					
 					
@@ -145,7 +172,7 @@
 									aria-hidden="true">&times;</button>
 								<h4 class="modal-title" id="myModal1Label">방방술래 서비스 관리</h4>
 							</div>
-							<div class="modal-body">알림 전송이 완료되었습니다.</div>
+							<div class="modal-body">알림 메일 전송이 완료되었습니다.</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-primary"
 									data-dismiss="modal">닫기</button>
@@ -156,6 +183,30 @@
 					<!-- /.modal-dialog -->
 				</div>
 				<!-- /.modal -->
+				
+			<!-- Modal -->
+				<div class="modal fade" id="myModalSms" tabindex="-1" role="dialog"
+					aria-labelledby="myModal1Label" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-hidden="true">&times;</button>
+								<h4 class="modal-title" id="myModal1Label">방방술래 서비스 관리</h4>
+							</div>
+							<div class="modal-body">알림 문자 전송이 완료되었습니다.</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary"
+									data-dismiss="modal">닫기</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+				
+				
 				
 				
 			<!-- Modal -->
@@ -214,6 +265,8 @@
 								$("#answerModal").modal("show");
 							} else if(result === 'success') {
 								$("#myModal").modal("show");
+							} else if(result === 'successSms') {
+								$("#myModalSms").modal("show");
 							}
 							
 						}

@@ -83,24 +83,24 @@
 			</exclusions>
 			<!-- <scope>runtime</scope> -->
 		</dependency>
-		
-		
+
+
 		<dependency>
 			<groupId>org.bgee.log4jdbc-log4j2</groupId>
 			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
 			<version>1.16</version>
 		</dependency>
-		
-		
-		
+
+
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		
+
+
 
 		<!-- @Inject -->
 		<dependency>
@@ -258,9 +258,26 @@
 			<artifactId>iamport-rest-client-java</artifactId>
 			<version>0.2.17</version>
 		</dependency>
+		<!-- Iamport API -->
+
+
+
+		<!-- 김현우 추가 부분 -->
+
+		<dependency>
+			<groupId>net.nurigo</groupId>
+			<artifactId>javaSDK</artifactId>
+			<version>2.2</version>
+		</dependency>
+
+		<!-- 김현우 추가 부분 -->
+		
+		
+		
+		
 
 	</dependencies>
-	<!-- Iamport API -->
+
 	<repositories>
 		<repository>
 			<id>jitpack.io</id>

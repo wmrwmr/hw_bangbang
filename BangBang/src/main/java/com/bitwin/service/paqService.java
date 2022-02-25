@@ -25,6 +25,8 @@ public interface paqService {
 	public int adminGetTotal(Criteria cri);
 
 	public String getEmail(int uidx);
+	
+	public String getPhoneNum(int uidx);
 
 	
 	

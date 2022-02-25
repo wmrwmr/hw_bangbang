@@ -140,7 +140,7 @@
 									aria-hidden="true">&times;</button>
 								<h4 class="modal-title" id="myModalLabel">방방술래 서비스 관리</h4>
 							</div>
-							<div class="modal-body">1:1문의 등록이 완료되었습니다.<br>답변이 완료되면 메일로 알림을 발송해 드리겠습니다.</div>
+							<div class="modal-body">1:1문의 등록이 완료되었습니다.<br>답변이 완료되면 SMS와 메일로 알림을 발송해 드리겠습니다.</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-primary"
 									data-dismiss="modal">닫기</button>

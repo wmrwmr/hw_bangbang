@@ -161,7 +161,13 @@
 		select email from project.user where uidx=#{uidx}
 	
 	</select>
-
+	
+	
+	<select id="getPhoneNum" resultType="String">
+	
+		select phonenum from project.user where uidx=#{uidx}
+	
+	</select>
 
 
 
