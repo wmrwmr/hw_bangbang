@@ -9,44 +9,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="short icon" href="/bangbang/resources/imageContainer/wine.png">
+<link rel="short icon" href="${pageContext.request.contextPath}/resources/imageContainer/wine.png">
 <title>방방술래</title>
 
 
 
 
 <!-- Bootstrap Core CSS -->
-<link href="/bangbang/resources/vendor/bootstrap/css/bootstrap.min.css"
+<link href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 
 <!-- MetisMenu CSS -->
-<link href="/bangbang/resources/vendor/metisMenu/metisMenu.min.css"
+<link href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/metisMenu/metisMenu.min.css"
 	rel="stylesheet">
 
 <!-- DataTables CSS -->
 <link
-	href="/bangbang/resources/vendor/datatables-plugins/dataTables.bootstrap.css"
+	href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/datatables-plugins/dataTables.bootstrap.css"
 	rel="stylesheet">
 
 <!-- DataTables Responsive CSS -->
 <link
-	href="/bangbang/resources/vendor/datatables-responsive/dataTables.responsive.css"
+	href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/datatables-responsive/dataTables.responsive.css"
 	rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="/bangbang/resources/dist/css/sb-admin-2.css"
+<link href="${pageContext.request.contextPath}/resources/hyunwoo/dist/css/sb-admin-2.css"
 	rel="stylesheet">
 
 <!-- Custom Fonts -->
 <link
-	href="/bangbang/resources/vendor/font-awesome/css/font-awesome.min.css"
+	href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 
 <script src="https://kit.fontawesome.com/ba424bfb3c.js"
 	crossorigin="anonymous"></script>
 
 	
-	<script type="text/javascript" src="/bangbang/resources/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js"></script>
 	
 
 
@@ -77,7 +77,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/bangbang/admin/notice_board/list"
+				<a class="navbar-brand" href="${pageContext.request.contextPath}/admin/notice_board/list"
 					style="width: 300px; position: absolute; right: 60%; left: 40%; text-align: center; font-weight: bold;">방방술래 서비스 관리</a>
 			</div>
 			<!-- /.navbar-header -->
@@ -111,15 +111,15 @@
                             </div>
                            /input-group
                         </li>  -->
-						<li><a href="/bangbang/admin/notice_board/list"><i
+						<li><a href="${pageContext.request.contextPath}/admin/notice_board/list"><i
 								class="fa-solid fa-circle-exclamation"></i> 공지사항</a></li>
 								
 								
-						<li><a href="/bangbang/admin/faq/list"><i class="fa-regular fa-circle-question"></i>
+						<li><a href="${pageContext.request.contextPath}/admin/faq/list"><i class="fa-regular fa-circle-question"></i>
 								자주묻는 질문(FAQ)</a></li>
 								
 								
-						<li><a href="/bangbang/admin/paq/admin-list"><i class="fa-solid fa-headset">
+						<li><a href="${pageContext.request.contextPath}/admin/paq/admin-list"><i class="fa-solid fa-headset">
 						</i> 1:1 문의</a></li>	
 													
 

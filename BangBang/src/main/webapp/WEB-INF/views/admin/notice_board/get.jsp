@@ -57,7 +57,7 @@
 				<button data-oper='modify' class="btn btn-default">수정/삭제</button>
 				<button data-oper='list' class="btn btn-info">목록</button>
 
-				<form id='operForm' action="/bangbang/admin/notice_board/modify" method="get">
+				<form id='operForm' action="${pageContext.request.contextPath}/admin/notice_board/modify" method="get">
 					<input type='hidden' id='nidx' name='nidx'
 						value='<c:out value="${board.nidx}"/>'> <input
 						type='hidden' name='pageNum'
@@ -89,14 +89,14 @@
 
 		$("button[data-oper='modify']").on("click", function(e) {
 
-			operForm.attr("action", "/bangbang/admin/notice_board/modify").submit();
+			operForm.attr("action", "${pageContext.request.contextPath}/admin/notice_board/modify").submit();
 
 		});
 
 		$("button[data-oper='list']").on("click", function(e) {
 
 			operForm.find("#nidx").remove();
-			operForm.attr("action", "/bangbang/admin/notice_board/list")
+			operForm.attr("action", "${pageContext.request.contextPath}/admin/notice_board/list")
 			operForm.submit();
 
 		});

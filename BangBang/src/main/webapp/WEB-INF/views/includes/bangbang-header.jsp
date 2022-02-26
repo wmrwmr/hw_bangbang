@@ -21,10 +21,10 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
 
-    <link rel="short icon" href="/bangbang/resources/imageContainer/wine.png">
+    <link rel="short icon" href="${pageContext.request.contextPath}/resources/imageContainer/wine.png">
 	
     <!-- Bootstrap core CSS -->
-<link href="/bangbang/resources/getboot/bootstrap.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/getboot/bootstrap.min.css" rel="stylesheet">
 
 	
 	<style>
@@ -79,7 +79,7 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/bangbang/resources/getboot/blog.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/resources/getboot/blog.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/ba424bfb3c.js" crossorigin="anonymous"></script>
    
@@ -94,7 +94,7 @@
       <div class="col-4 pt-1">
       </div>
       <div class="col-4 text-center"  style="padding-top: 10px;">
-        <a href="/bangbang/main/mainpage" class="title-font">방방술래</a>
+        <a href="${pageContext.request.contextPath}/main/mainpage" class="title-font">방방술래</a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center" style="padding-top:50px;">
 
@@ -106,7 +106,7 @@
 		
 		<div style="width:10px;"></div>
 		
-        <a class="btn btn-sm btn-outline-secondary" href="/bangbang/member/login" style="border: 0px;">로그인</a> 
+        <a class="btn btn-sm btn-outline-secondary" href="${pageContext.request.contextPath}/member/login" style="border: 0px;">로그인</a> 
       </div>
     </div>
   </header>

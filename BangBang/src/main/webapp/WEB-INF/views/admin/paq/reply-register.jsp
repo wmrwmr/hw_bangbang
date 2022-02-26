@@ -53,7 +53,7 @@
 
 
 
-				<form role="form" action="/bangbang/admin/paq/reply-register" method="post" >
+				<form role="form" action="${pageContext.request.contextPath}/admin/paq/reply-register" method="post" >
 
 
 					<div class="form-group">
@@ -71,7 +71,7 @@
 							type="text/javascript">
 						// 글쓰기 editor 및 사진 업로드 기능
 						CKEDITOR.replace('content', {
-							filebrowserUploadUrl : '/bangbang/admin/paq/imageUpload'
+							filebrowserUploadUrl : '${pageContext.request.contextPath}/admin/paq/imageUpload'
 						});
 					</script></td> <br>
 
@@ -85,7 +85,7 @@
 				
 				
 				
-				<form action="/bangbang/admin/paq/mailSend" method="post">
+				<form action="${pageContext.request.contextPath}/admin/paq/mailSend" method="post">
 					
 						<div class="form-group">
 						<input type='hidden' class="form-control" name='pqidx'
@@ -108,7 +108,7 @@
 					</form>
 					
 					
-					<form action="/bangbang/admin/paq/smsSend" method="post">
+					<form action="${pageContext.request.contextPath}/admin/paq/smsSend" method="post">
 					
 						<div class="form-group">
 						<input type='hidden' class="form-control" name='pqidx'
@@ -135,7 +135,7 @@
 					
 					
 					
-				<form id='operForm' action="/bangbang/admin/paq/admin-get" method="get" style="padding-top: 15px;">
+				<form id='operForm' action="${pageContext.request.contextPath}/admin/paq/admin-get" method="get" style="padding-top: 15px;">
 					<input type='hidden' id='pqidx' name='pqidx'
 						value='<c:out value="${paq.pqidx}"/>'> <input
 						type='hidden' name='pageNum'
@@ -277,7 +277,7 @@
 
 						$("button[data-oper='back']").on("click", function(e) {
 
-							operForm.attr("action", "/bangbang/admin/paq/admin-get").submit();
+							operForm.attr("action", "${pageContext.request.contextPath}/admin/paq/admin-get").submit();
 
 						});
 						

@@ -72,7 +72,7 @@
 			</div>
 			
 			<div id="button-container">
-				<div id="app-download-link-button"><a href="/bangbang/main/mainpage" style="text-decoration: none; color: white;">홈페이지로 이동</a>
+				<div id="app-download-link-button"><a href="${pageContext.request.contextPath}/main/mainpage" style="text-decoration: none; color: white;">홈페이지로 이동</a>
 					
 				</div>
 				<div class="hide--mobile"></div>

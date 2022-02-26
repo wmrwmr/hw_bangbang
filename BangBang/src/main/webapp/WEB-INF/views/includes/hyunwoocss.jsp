@@ -6,36 +6,36 @@
     
     
 <!-- Bootstrap Core CSS -->
- <link href="/bangbang/resources/vendor/bootstrap/css/bootstrap.min.css"
+ <link href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet"> 
 
 <!-- MetisMenu CSS -->
-<link href="/bangbang/resources/vendor/metisMenu/metisMenu.min.css"
+<link href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/metisMenu/metisMenu.min.css"
 	rel="stylesheet">
 
 <!-- DataTables CSS -->
 <link
-	href="/bangbang/resources/vendor/datatables-plugins/dataTables.bootstrap.css"
+	href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/datatables-plugins/dataTables.bootstrap.css"
 	rel="stylesheet">
 
 <!-- DataTables Responsive CSS -->
 <link
-	href="/bangbang/resources/vendor/datatables-responsive/dataTables.responsive.css"
+	href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/datatables-responsive/dataTables.responsive.css"
 	rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="/bangbang/resources/dist/css/sb-admin-2.css"
+<link href="${pageContext.request.contextPath}/resources/hyunwoo/dist/css/sb-admin-2.css"
 	rel="stylesheet">
 
 <!-- Custom Fonts -->
 <link
-	href="/bangbang/resources/vendor/font-awesome/css/font-awesome.min.css"
+	href="${pageContext.request.contextPath}/resources/hyunwoo/vendor/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 
 
 
 	
-	<script type="text/javascript" src="/bangbang/resources/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js"></script>
     
     
 	<!-- 내 기존 css 끝-->

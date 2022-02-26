@@ -27,7 +27,7 @@
 
 
 
-				<form role="form" action="/bangbang/admin/faq/register" method="post">
+				<form role="form" action="${pageContext.request.contextPath}/admin/faq/register" method="post">
 					<div class="form-group">
 
 					
@@ -43,7 +43,7 @@
 								type="text/javascript">
 							// 글쓰기 editor 및 사진 업로드 기능
 							CKEDITOR.replace('content', {
-								filebrowserUploadUrl : '/bangbang/admin/faq/imageUpload'
+								filebrowserUploadUrl : '${pageContext.request.contextPath}/admin/faq/imageUpload'
 							});
 						</script></td> 
 	

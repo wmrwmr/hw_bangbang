@@ -16,7 +16,7 @@
 			<li><a href="${pageContext.request.contextPath}/admin/member">회원 관리</a></li>
 			<li><a href="">상품 게시글 관리</a></li>
 			<li><a href="">판매 상품 관리</a></li>
-			<li><a href="/bangbang/admin/notice_board/list">서비스 관리 메뉴</a></li>
+			<li><a href="${pageContext.request.contextPath}/admin/notice_board/list">서비스 관리 메뉴</a></li>
 			<li><a href="${pageContext.request.contextPath }/admin/logout">로그아웃</a>
 			</li>
 		</ul>

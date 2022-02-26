@@ -75,7 +75,7 @@
 
 				<button data-oper='replyRegister' class="btn btn-default">답변</button>
 				
-				<form id='operForm' action="/bangbang/admin/paq/reply-register" method="get" style="display: inline;">
+				<form id='operForm' action="${pageContext.request.contextPath}/admin/paq/reply-register" method="get" style="display: inline;">
 					<input type='hidden' id='pqidx' name='pqidx'
 						value='<c:out value="${paq.pqidx}"/>'> <input
 						type='hidden' name='pageNum'
@@ -94,7 +94,7 @@
 				
 				<button data-oper='list' class="btn btn-info">목록</button>
 
-				<form id='operForm' action="/bangbang/admin/paq/adminGet" method="get" style="display: inline;">
+				<form id='operForm' action="${pageContext.request.contextPath}/admin/paq/adminGet" method="get" style="display: inline;">
 					<input type='hidden' id='pqidx' name='pqidx'
 						value='<c:out value="${paq.pqidx}"/>'> <input
 						type='hidden' name='pageNum'
@@ -110,7 +110,7 @@
 				
 				
 
-				<form id='operForm' action="/bangbang/admin/paq/remove" method="post" style="display: inline;">
+				<form id='operForm' action="${pageContext.request.contextPath}/admin/paq/remove" method="post" style="display: inline;">
 				
 				<input type='hidden' id='pqidx' name='pqidx'
 						value='<c:out value="${paq.pqidx}"/>'> <input
@@ -142,14 +142,14 @@
 
 		$("button[data-oper='replyRegister']").on("click", function(e) {
 
-			operForm.attr("action", "/bangbang/admin/paq/reply-register").submit();
+			operForm.attr("action", "${pageContext.request.contextPath}/admin/paq/reply-register").submit();
 
 		});
 		
 		
 		$("button[data-oper='remove']").on("click", function(e) {
 
-			operForm.attr("action", "/bangbang/admin/paq/remove").submit();
+			operForm.attr("action", "${pageContext.request.contextPath}/admin/paq/remove").submit();
 
 		});
 		
@@ -160,7 +160,7 @@
 		$("button[data-oper='list']").on("click", function(e) {
 
 			operForm.find("#pqidx").remove();
-			operForm.attr("action", "/bangbang/admin/paq/admin-list")
+			operForm.attr("action", "${pageContext.request.contextPath}/admin/paq/admin-list")
 			operForm.submit();
 
 		});

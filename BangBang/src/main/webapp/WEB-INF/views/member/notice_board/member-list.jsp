@@ -68,7 +68,7 @@
 				<div class='pull-left' style="padding-top: 18px;">
 					<div class="col-lg-12">
 
-						<form id='searchForm' action="/bangbang/member/notice_board/member-list" method="get">
+						<form id='searchForm' action="${pageContext.request.contextPath}/member/notice_board/member-list" method="get">
 							<select name='type'>
 
 								<option value="">--</option>
@@ -124,7 +124,7 @@
 
 				<!-- end Pagination -->
 
-				<form id='actionForm' action="/bangbang/member/notice_board/member-list" method='get'>
+				<form id='actionForm' action="${pageContext.request.contextPath}/member/notice_board/member-list" method='get'>
 					<input type='hidden' name='pageNum'
 						value='${pageMaker.cri.pageNum }'> <input type='hidden'
 						name='amount' value='${pageMaker.cri.amount}'> <input
@@ -195,7 +195,7 @@
 
 						$("#regBtn").on("click", function() {
 
-							self.location = "/bangbang/member/notice_board/register";
+							self.location = "${pageContext.request.contextPath}/member/notice_board/register";
 
 						})
 
@@ -230,7 +230,7 @@
 																	"href")
 															+ "'>");
 											actionForm.attr("action",
-													"/bangbang/member/notice_board/member-get");
+													"${pageContext.request.contextPath}/member/notice_board/member-get");
 											actionForm.submit();
 
 										});

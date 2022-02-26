@@ -127,34 +127,34 @@ public class faqController {
 	}
 	
 	
-	 // 이미지 업로드
+	 // �씠誘몄� �뾽濡쒕뱶
     @RequestMapping(value="/imageUpload", method = RequestMethod.POST)
     public void imageUpload(HttpServletRequest request,
     		HttpServletResponse response, MultipartHttpServletRequest multiFile
     		, @RequestParam MultipartFile upload) throws Exception{
-    	// 랜덤 문자 생성
+    	// �옖�뜡 臾몄옄 �깮�꽦
     	UUID uid = UUID.randomUUID();
     	
     	OutputStream out = null;
     	PrintWriter printWriter = null;
     	
-    	//인코딩
+    	//�씤肄붾뵫
     	response.setCharacterEncoding("utf-8");
     	response.setContentType("text/html;charset=utf-8");
     	try{
-    		//파일 이름 가져오기
+    		//�뙆�씪 �씠由� 媛��졇�삤湲�
     		String fileName = upload.getOriginalFilename();
     		byte[] bytes = upload.getBytes();
     		
-    		//이미지 경로 생성
-    		String path = "C:\\Users\\samsung\\Pictures\\Saved Pictures" + "ckImage/";	// 이미지 경로 설정(폴더 자동 생성)
+    		//�씠誘몄� 寃쎈줈 �깮�꽦
+    		String path = "C:\\Users\\samsung\\Pictures\\Saved Pictures" + "ckImage/";	// �씠誘몄� 寃쎈줈 �꽕�젙(�뤃�뜑 �옄�룞 �깮�꽦)
     		String ckUploadPath = path + uid + "_" + fileName;
     		File folder = new File(path);
-    		System.out.println("path:"+path);	// 이미지 저장경로 console에 확인
-    		//해당 디렉토리 확인
+    		System.out.println("path:"+path);	// �씠誘몄� ���옣寃쎈줈 console�뿉 �솗�씤
+    		//�빐�떦 �뵒�젆�넗由� �솗�씤
     		if(!folder.exists()){
     			try{
-    				folder.mkdirs(); // 폴더 생성
+    				folder.mkdirs(); // �뤃�뜑 �깮�꽦
     		}catch(Exception e){
     			e.getStackTrace();
     		}
@@ -162,13 +162,13 @@ public class faqController {
     	
     	out = new FileOutputStream(new File(ckUploadPath));
     	out.write(bytes);
-    	out.flush(); // outputStram에 저장된 데이터를 전송하고 초기화
+    	out.flush(); // outputStram�뿉 ���옣�맂 �뜲�씠�꽣瑜� �쟾�넚�븯怨� 珥덇린�솕
     	
     	String callback = request.getParameter("CKEditorFuncNum");
     	printWriter = response.getWriter();
-    	String fileUrl = "/bangbang/admin/faq/ckImgSubmit?uid=" + uid + "&fileName=" + fileName; // 작성화면
+    	String fileUrl = "${pageContext.request.contextPath}/admin/faq/ckImgSubmit?uid=" + uid + "&fileName=" + fileName; // �옉�꽦�솕硫�
     	
-    	// 업로드시 메시지 출력
+    	// �뾽濡쒕뱶�떆 硫붿떆吏� 異쒕젰
     	printWriter.println("{\"filename\" : \""+fileName+"\", \"uploaded\" : 1, \"url\":\""+fileUrl+"\"}");
     	printWriter.flush();
     	
@@ -185,21 +185,21 @@ public class faqController {
 	
 	
 	
-    // 서버로 전송된 이미지 뿌려주기
+    // �꽌踰꾨줈 �쟾�넚�맂 �씠誘몄� 肉뚮젮二쇨린
     @RequestMapping(value="/ckImgSubmit")
     public void ckSubmit(@RequestParam(value="uid") String uid
     		, @RequestParam(value="fileName") String fileName
     		, HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException{
     	
-    	//서버에 저장된 이미지 경로
-    	String path = "C:\\Users\\samsung\\Pictures\\Saved Pictures" + "ckImage/";	// 저장된 이미지 경로
+    	//�꽌踰꾩뿉 ���옣�맂 �씠誘몄� 寃쎈줈
+    	String path = "C:\\Users\\samsung\\Pictures\\Saved Pictures" + "ckImage/";	// ���옣�맂 �씠誘몄� 寃쎈줈
     	System.out.println("path:"+path);
     	String sDirPath = path + uid + "_" + fileName;
     	
     	File imgFile = new File(sDirPath);
     	
-    	//사진 이미지 찾지 못하는 경우 예외처리로 빈 이미지 파일을 설정한다.
+    	//�궗吏� �씠誘몄� 李얠� 紐삵븯�뒗 寃쎌슦 �삁�쇅泥섎━濡� 鍮� �씠誘몄� �뙆�씪�쓣 �꽕�젙�븳�떎.
     	if(imgFile.isFile()){
     		byte[] buf = new byte[1024];
     		int readByte = 0;

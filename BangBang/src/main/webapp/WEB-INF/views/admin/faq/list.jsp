@@ -70,7 +70,7 @@
 				<div class='pull-left' style="padding-top: 18px;" >
 					<div class="col-lg-12">
 
-						<form id='searchForm' action="/bangbang/admin/faq/list" method="get">
+						<form id='searchForm' action="${pageContext.request.contextPath}/admin/faq/list" method="get">
 							<select name='type'>
 
 								<option value="">--</option>
@@ -118,7 +118,7 @@
 				</div>
 				<!-- end Pagination -->
 
-				<form id='actionForm' action="/bangbang/admin/faq/list" method='get'>
+				<form id='actionForm' action="${pageContext.request.contextPath}/admin/faq/list" method='get'>
 					<input type='hidden' name='pageNum' value='${pageMaker.cri.pageNum }'> 
 					<input type='hidden' name='amount' value='${pageMaker.cri.amount}'>
 					<input type='hidden' name='start' value='${pageMaker.cri.start}'>
@@ -216,7 +216,7 @@
 						
 						$("#regBtn").on("click", function() {
 
-							self.location = "/bangbang/admin/faq/register";
+							self.location = "${pageContext.request.contextPath}/admin/faq/register";
 
 						})
 
@@ -248,7 +248,7 @@
 																	"href")
 															+ "'>");
 											actionForm.attr("action",
-													"/bangbang/admin/faq/get");
+													"${pageContext.request.contextPath}/admin/faq/get");
 											actionForm.submit();
 
 										});

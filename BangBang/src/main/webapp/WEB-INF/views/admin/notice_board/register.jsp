@@ -27,7 +27,7 @@
 
 
 
-				<form role="form" action="/bangbang/admin/notice_board/register" method="post">
+				<form role="form" action="${pageContext.request.contextPath}/admin/notice_board/register" method="post">
 					<div class="form-group">
 
 					
@@ -44,7 +44,7 @@
 								type="text/javascript">
 							// 글쓰기 editor 및 사진 업로드 기능
 							CKEDITOR.replace('content', {
-								filebrowserUploadUrl : '/bangbang/admin/notice_board/imageUpload'
+								filebrowserUploadUrl : '${pageContext.request.contextPath}/admin/notice_board/imageUpload'
 							});
 						</script></td>
 					</tr>

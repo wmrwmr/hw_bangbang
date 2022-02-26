@@ -33,7 +33,7 @@
 
 
 
-				<form role="form" action="/bangbang/member/paq/member-register" method="post">
+				<form role="form" action="${pageContext.request.contextPath}/member/paq/member-register" method="post">
 					<div class="form-group">
 
 					
@@ -49,7 +49,7 @@
 								type="text/javascript">
 							// 글쓰기 editor 및 사진 업로드 기능
 							CKEDITOR.replace('content', {
-								filebrowserUploadUrl : '/bangbang/member/paq/imageUpload'
+								filebrowserUploadUrl : '${pageContext.request.contextPath}/member/paq/imageUpload'
 							});
 						</script></td> 
 	

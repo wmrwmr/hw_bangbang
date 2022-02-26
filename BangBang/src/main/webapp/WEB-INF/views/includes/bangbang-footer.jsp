@@ -7,7 +7,7 @@
 		
 		 <!-- 본문가리지 않는 플로팅배너 모듈 -->
 				<a style="POSITION: fixed; RIGHT: 1%; BOTTOM: 2%;" href="http://pf.kakao.com/_Cxjpwb/chat" target="_blank">
-							<img src="../../../bangbang/resources/hyunwoo/imageContainer/kakaoLogo.png" style="width: 60px; height: 60px;"> 
+							<img src="../../..${pageContext.request.contextPath}/resources/hyunwoo/imageContainer/kakaoLogo.png" style="width: 60px; height: 60px;"> 
 				</a>
 				<!-- 모듈 끝 -->
 		
@@ -61,18 +61,18 @@
 
 
   <!-- Bootstrap Core JavaScript -->
-    <script src="/bangbang/resources/hyunwoo/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/hyunwoo/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="/bangbang/resources/hyunwoo/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/hyunwoo/vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- DataTables JavaScript -->
-    <script src="/bangbang/resources/hyunwoo/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="/bangbang/resources/hyunwoo/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="/bangbang/resources/hyunwoo/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/hyunwoo/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/hyunwoo/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/hyunwoo/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/bangbang/resources/hyunwoo/dist/js/sb-admin-2.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/hyunwoo/dist/js/sb-admin-2.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>

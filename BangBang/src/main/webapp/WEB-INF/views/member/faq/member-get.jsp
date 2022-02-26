@@ -70,7 +70,7 @@
 
 				<button data-oper='list' class="btn btn-info">목록</button>
 
-				<form id='operForm' action="/bangbang/member/faq/modify" method="get">
+				<form id='operForm' action="${pageContext.request.contextPath}/member/faq/modify" method="get">
 					<input type='hidden' id='fqidx' name='fqidx'
 						value='<c:out value="${faq.fqidx}"/>'> <input
 						type='hidden' name='pageNum'
@@ -101,14 +101,14 @@
 
 		$("button[data-oper='modify']").on("click", function(e) {
 
-			operForm.attr("action", "/bangbang/member/faq/modify").submit();
+			operForm.attr("action", "${pageContext.request.contextPath}/member/faq/modify").submit();
 
 		});
 
 		$("button[data-oper='list']").on("click", function(e) {
 
 			operForm.find("#fqidx").remove();
-			operForm.attr("action", "/bangbang/member/faq/member-list")
+			operForm.attr("action", "${pageContext.request.contextPath}/member/faq/member-list")
 			operForm.submit();
 
 		});

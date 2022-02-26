@@ -83,7 +83,7 @@
 <!-- 				<button data-oper='modify' class="btn btn-default">수정/삭제</button> -->
 				<button data-oper='list' class="btn btn-info">목록</button>
 
-				<form id='operForm' action="/bangbang/member/paq/modify" method="get">
+				<form id='operForm' action="${pageContext.request.contextPath}/member/paq/modify" method="get">
 					<input type='hidden' id='pqidx' name='pqidx'
 						value='<c:out value="${paq.pqidx}"/>'> <input
 						type='hidden' name='pageNum'
@@ -111,16 +111,12 @@
 
 		var operForm = $("#operForm");
 
-/* 		$("button[data-oper='modify']").on("click", function(e) {
 
-			operForm.attr("action", "/bangbang/member/paq/modify").submit();
-
-		}); */
 
 		$("button[data-oper='list']").on("click", function(e) {
 
 			operForm.find("#pqidx").remove();
-			operForm.attr("action", "/bangbang/member/paq/member-list")
+			operForm.attr("action", "${pageContext.request.contextPath}/member/paq/member-list")
 			operForm.submit();
 
 		});

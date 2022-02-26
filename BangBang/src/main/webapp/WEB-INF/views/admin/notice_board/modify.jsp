@@ -19,7 +19,7 @@
 			<!-- /.panel-heading -->
 			<div class="panel-body">
 
-				<form role="form" action="/bangbang/admin/notice_board/modify" method="post">
+				<form role="form" action="${pageContext.request.contextPath}/admin/notice_board/modify" method="post">
 
 					<input type='hidden' name='pageNum'
 						value='<c:out value="${cri.pageNum }"/>'> <input
@@ -50,7 +50,7 @@
 											.replace(
 													'content',
 													{
-														filebrowserUploadUrl : '/bangbang/admin/notice_board/imageUpload'
+														filebrowserUploadUrl : '${pageContext.request.contextPath}/admin/notice_board/imageUpload'
 													});
 								</script></td>
 
@@ -110,11 +110,11 @@
 											if (operation === 'remove') {
 												formObj
 														.attr("action",
-																"/bangbang/admin/notice_board/remove");
+																"${pageContext.request.contextPath}/admin/notice_board/remove");
 											} else if (operation === 'list') {
 												//move to list
 												formObj.attr("action",
-														"/bangbang/admin/notice_board/list")
+														"${pageContext.request.contextPath}/admin/notice_board/list")
 														.attr("method", "get");
 												var pageNumTag = $(
 														"input[name='pageNum']")
